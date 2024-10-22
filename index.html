@@ -33,6 +33,46 @@
                 background-size: 5px 5px;
             }
         </style>
+        <style>
+             /* WhatsApp sticky button */
+            .whatsapp-btn {
+                position: fixed;
+                bottom: 20px;
+                left: 20px;
+                background-color: #25D366;
+                border-radius: 50px;
+                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+                padding: 5px;
+                z-index: 1000;
+                text-align: center;
+            }
+
+            /* WhatsApp button image */
+            .whatsapp-btn img {
+                width: 50px;
+                height: 50px;
+            }
+
+            /* Hover effect */
+            .whatsapp-btn:hover {
+                background-color: #128C7E;
+            }
+
+            /* Mobile responsiveness */
+            @media (max-width: 576px) { /* Mobile screens (Extra small devices) */
+                .whatsapp-btn {
+                    bottom: 10px; /* Adjust the bottom spacing */
+                    left: 10px;   /* Adjust the left spacing */
+                    padding: 10px;
+                }
+
+                .whatsapp-btn img {
+                    width: 40px;  /* Smaller button for mobile */
+                    height: 40px;
+                }
+            }
+
+        </style>
 
     </head>
 
@@ -828,6 +868,10 @@
         
         <!-- Back to top button -->
         <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+        <a href="https://wa.me/+919810763340" target="_blank" class="whatsapp-btn">
+            <img src="./img/WhatsApp_icon.png" alt="WhatsApp">
+        </a>
         
         
         <!-- Pre Loader -->
